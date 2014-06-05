@@ -1,0 +1,37 @@
+{
+	"name": "karma-jsmockito-jshamcrest",
+	"description":"JsMockito and JsHamcrest plugin for Karma as alternative mocxking, matching & assertion frameworks",
+	"keywords": [
+		"karma",
+		"jsmockito",
+		"jshamcrest",
+		"mocha",
+		"should"
+	],
+	"version": "0.0.2",
+	"author":"Stephen Hand <steve2727@hotmail.com>",
+	"main":"./src/index.js",
+	"homepage": "https://github.com/stephenhand/karma-jsmockito-jshamcrest",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/stephenhand/karma-jsmockito-jshamcrest.git"
+	},
+	"bugs": {
+		"url": "https://github.com/stephenhand/karma-jsmockito-jshamcrest/issues"
+	},
+	"dependencies":{
+		"jsmockito":">=1.0.4",
+		"jshamcrest":">=0.7.0"
+	},
+	"devDependencies": {
+		"grunt": "~0.4",
+		"karma": "~0.12.0",
+		"karma-mocha": "~0.1",
+		"karma-chrome-launcher": "~0.1.0",
+		"karma-firefox-launcher": "~0.1.0",
+		"grunt-karma": "~0.8.0"
+	},
+	"peerDependencies":{
+		"karma":">=0.10"
+	}
+}
