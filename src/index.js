@@ -11,6 +11,8 @@ var framework = function(files) {
 	files.unshift(pattern(path.join(__dirname, 'adapter.js')));
 	files.unshift(pattern(path.resolve(require.resolve('jshamcrest'))));
 	files.unshift(pattern(path.resolve(require.resolve('jsmockito'))));
+	files.unshift(pattern(path.join(__dirname, 'fix_jsmockito_npm.js')));
+
 };
 
 framework.$inject = ['config.files'];
