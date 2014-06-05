@@ -40,7 +40,7 @@ Usage
 
 Once installed, the JsHamcrest & JsMockito libraries will be available to use in your tests run under karma without having to load them into the browser as part of your test project.
 All JsMockito and JsHamcrest functions will be available in the global scope (window) just as if they had been installed using the integration functions, so all the usage examples found on their homepages above apply.
-Also, an 'assertThat' function with the following signature:
+Also, it adds an 'assertThat' function with the following signature:
 
 ```js
 function assertThat(actualValue, matcherOrValue, message){...
