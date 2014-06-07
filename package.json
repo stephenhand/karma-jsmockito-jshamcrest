@@ -20,7 +20,7 @@
 		"url": "https://github.com/stephenhand/karma-jsmockito-jshamcrest/issues"
 	},
 	"dependencies":{
-		"jsmockito":">=1.0.4",
+		"jsmockito":">=1.0.5",
 		"jshamcrest":">=0.7.0"
 	},
 	"devDependencies": {
