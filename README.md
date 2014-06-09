@@ -21,6 +21,8 @@ Install the module via npm
 $ npm install karma-jsmockito-jshamcrest
 ```
 
+or include it in your project's package.json alongside karma.
+
 Add `jsmockito-jshamcrest` to the `frameworks` key in your Karma configuration:
 
 ```js
@@ -47,3 +49,5 @@ function assertThat(actualValue, matcherOrValue, message){...
 ```
 
 This matches those installed in other frameworks using the JsHamcrest integration functions and means the 'assertThat' examples provided in the API docs work as expected.
+
+Note that this plugin is purely for mocking and assertions, it does not provide any libraries for defining tests and test suites, a plugin providing this needs to be included separately. [karma-mocha](https://www.npmjs.org/package/karma-mocha) for Mocha or [karma-jasmine](https://www.npmjs.org/package/karma-jasmine) for Jasmine are both excellent options.

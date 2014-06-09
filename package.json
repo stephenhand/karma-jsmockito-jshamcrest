@@ -1,12 +1,15 @@
 {
 	"name": "karma-jsmockito-jshamcrest",
-	"description":"JsMockito and JsHamcrest plugin for Karma as alternative mocxking, matching & assertion frameworks",
+	"description":"JsMockito and JsHamcrest plugin for Karma as alternative mocking, matching & assertion frameworks",
 	"keywords": [
 		"karma",
+        "karma-plugin",
 		"jsmockito",
 		"jshamcrest",
+        "tdd",
 		"mocha",
-		"should"
+		"assert",
+        "mock"
 	],
 	"version": "0.0.4",
 	"author":"Stephen Hand <steve2727@hotmail.com>",
