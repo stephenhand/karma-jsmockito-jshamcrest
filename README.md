@@ -1,6 +1,6 @@
 
 karma-jsmockito-jshamcrest
-================
+==========================
 
   * [JsMockito](http://jsmockito.org)
   * [JsHamcrest](http://www.danielfm.me/jshamcrest/)
@@ -50,4 +50,15 @@ function assertThat(actualValue, matcherOrValue, message){...
 
 This matches those installed in other frameworks using the JsHamcrest integration functions and means the 'assertThat' examples provided in the API docs work as expected.
 
-Note that this plugin is purely for mocking and assertions, it does not provide any libraries for defining tests and test suites, a plugin providing this needs to be included separately. [karma-mocha](https://www.npmjs.org/package/karma-mocha) for Mocha or [karma-jasmine](https://www.npmjs.org/package/karma-jasmine) for Jasmine are both excellent options.
+CoffeeScript
+------------
+
+By default, JsMockito's 'when' function is put in the global (window) scope. This can cause issues when trying to use it in CoffeeScript where 'when' is a reserved keyword. 
+
+Whilst you can always work around this by explicitly referencing 'JsMockito.when' where required, this can get a little verbose so this plugin also aliases 'JsMockito.when' to '_when' for convenience.
+
+
+Note
+----
+
+this plugin is purely for mocking and assertions, it does not provide any libraries for defining tests and test suites, a plugin providing this needs to be included separately. [karma-mocha](https://www.npmjs.org/package/karma-mocha) for Mocha or [karma-jasmine](https://www.npmjs.org/package/karma-jasmine) for Jasmine are both excellent options.

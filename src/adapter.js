@@ -4,6 +4,7 @@
 (function(window) {
 	JsHamcrest.Integration.copyMembers(window);
 	JsMockito.Integration.importTo(window);
+    window._when = JsMockito.when;
 	window.assertThat = function(actualValue, matcherOrValue, message) {
 		JsHamcrest.Operators.assert(actualValue, matcherOrValue, {
 			message: message,

@@ -17,6 +17,14 @@ describe("adapter.js", function(){
 		mockInstance.method1();
 		verify(mockInstance).method1();
 	});
+    it("adds _when alias of JsMockito.when for CoffeeScript (where 'when' is a reserved keyword)", function(){
+        var objClass = function(){};
+        objClass.prototype.method1 = function(){};
+        var mockInstance = mock(objClass);
+        _when(mockInstance).method1().then(function(){return "RESULT";});
+        mockInstance.method1();
+        verify(mockInstance).method1();
+    });
 	it("adds JsHamcrest matchers to root window object", function(){
 		if (!equalTo(4).matches(4)){throw new Error("equalTo matcher failed")};
 		if (!nil().matches()){throw new Error("nil matcher failed")};
